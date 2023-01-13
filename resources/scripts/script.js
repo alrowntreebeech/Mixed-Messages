@@ -1,8 +1,5 @@
-//Declaration of Pokemon typings
-let pokemonType1 = ["Normal", "Fire", "Water", "Electricity", "Grass", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"];
-let pokemonType2 = ["Normal", "Fire", "Water", "Electricity", "Grass", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy", "/"];
 
-//Fusing two items
+//Fusing two inputs
 const pokemonFactory = () => {
     // Variable to stroe the new Pokemon
     let newPokemon; 
@@ -17,10 +14,41 @@ const pokemonFactory = () => {
     let firstHalf = item1.substring(0, firstHalfLength);
     let secondHalf = item2.substring(secondHalfLength);
 
-    //Concatinating both half of value to create new Pokemon 
+    //Concatinating both halves of value to create new Pokemon 
     newPokemon = firstHalf + secondHalf;
     document.getElementById('newPokemon').innerHTML = newPokemon;
 }
 
 
+//Declaration of Pokemon typings
+let pokemonType1 = ["Normal", "Fire", "Water", "Electricity", "Grass", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"];
+let pokemonType2 = ["Normal", "Fire", "Water", "Electricity", "Grass", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy", "None"];
 
+//Second Pokemon Type - declaring first and then comparing with first type to make sure there are not two of the same types
+const secondType = (type1) => {
+
+    let type2;
+    do{
+    let arrayPos = Math.floor(Math.random() * 19);
+    type2 = pokemonType2[arrayPos];
+    } while (type2 === type1);
+    document.getElementById('type2').innerHTML = type2;
+}
+
+//Declaring Pokemon types
+const pokemonType = () => {
+
+    let type1; 
+    let arrayPos = Math.floor(Math.random() * 18);
+    type1 = pokemonType1[arrayPos];
+    document.getElementById('type1').innerHTML = type1;
+    secondType(type1);
+
+}
+
+
+//Master function
+const masterFunction = () => {
+    pokemonFactory();
+    pokemonType();
+}
