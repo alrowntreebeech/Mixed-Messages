@@ -16,7 +16,13 @@ const pokemonFactory = () => {
 
     //Concatinating both halves of value to create new Pokemon 
     newPokemon = firstHalf + secondHalf;
+    newPokemon = capitaliseFirstLetter(newPokemon);
     document.getElementById('newPokemon').innerHTML = newPokemon;
+}
+
+//Function to capitalise the first letter and make the rest of the string lower case
+const capitaliseFirstLetter = (pokemonName) => {
+    return pokemonName.charAt(0).toUpperCase() + pokemonName.slice(1).toLowerCase();
 }
 
 
