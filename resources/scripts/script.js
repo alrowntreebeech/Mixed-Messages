@@ -4,10 +4,21 @@ let pokemonType2 = ["Normal", "Fire", "Water", "Electricity", "Grass", "Ice", "F
 
 //Fusing two items
 const pokemonFactory = () => {
-    let newPokemon;
+    // Variable to stroe the new Pokemon
+    let newPokemon; 
+
+    //Retrieving input values
     let item1 = document.getElementById('item1').value;
     let item2 = document.getElementById('item2').value;
-    newPokemon = item1 + item2;
+
+    //Splitting strings in half + assinging to new variable
+    let firstHalfLength = Math.ceil(item1.length / 2);
+    let secondHalfLength = Math.floor(item2.length / 2);
+    let firstHalf = item1.substring(0, firstHalfLength);
+    let secondHalf = item2.substring(secondHalfLength);
+
+    //Concatinating both half of value to create new Pokemon 
+    newPokemon = firstHalf + secondHalf;
     document.getElementById('newPokemon').innerHTML = newPokemon;
 }
 
