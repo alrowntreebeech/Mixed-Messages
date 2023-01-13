@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="./resources/css/style.css" rel="stylesheet">
+        <script src="./resources/scripts/script.js"></script>
+        <title>Pokemon Generator</title> 
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img src="./resources/images/pokemon logo.png" alt="Pokemon logo">
+            </figure>
+            <h1>Name Generator</h1>
+        </header>
+        <section>
+            <div id="explanation">
+                <p>
+                    This is website designed to generate the name of a Pokemon. Simply type any animal (or thing) into the first box and a different animal into the second box and the webiste will mash the two animals together to produce a Pokemon. The Pokemon typing is random. Who says you can't be inventive. 
+                </p>
+            </div>
+            <div>
+                <div class="forms">
+                    <label for="item1">First item</label>
+                    <input type="text" id="item1" name="item1">
+                    <br>
+                    <br>
+                    <label for="item2">Second item</label>
+                    <input type="text" id="item2" name="item2">
+                    <br> 
+                    <br>
+                    <div class="button" onclick="pokemonFactory()">Create Your Pokemon</div>
+                </div>
+                <div class="output">
+                    <p id="newPokemon">Your New Pokemon</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
