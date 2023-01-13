@@ -52,7 +52,6 @@ const pokemonType = () => {
 
 }
 
-
 //Master function
 const masterFunction = () => {
     pokemonFactory();
