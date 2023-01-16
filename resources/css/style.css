@@ -1,3 +1,4 @@
+
 html {
     background-image: url(../images/pokemon-1673528947343-4982.jpg);
     background-size: cover;
@@ -49,11 +50,41 @@ section {
     text-decoration: underline;
 }
 
-.button { 
-    text-align: center;
-    border: black solid 1px;
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    all: unset;
+}
+
+div label {
+    font-weight: 700;
+}
+
+#pokemonButton {
+   padding: 5px;
+   border: black solid 1px;
+   font-style: italic;
+   border-radius: 25px;
+   font-weight: 700;
+   background-color: rgb(186, 46, 25);
+   cursor: pointer;
+   box-shadow: 5px 5px 5px black;
+}
+
+#pokemonButton:active {
+    box-shadow: none;
+}
+
+.output {
+    margin-top: 2rem;
 }
 
 #newPokemon {
     text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1.2rem;
 }
