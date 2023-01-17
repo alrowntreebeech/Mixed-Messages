@@ -88,3 +88,30 @@ div label {
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 1.2rem;
 }
+
+#pokemonType {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#uniquePokemonType {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.typeSymbol {
+    height: 5rem;
+    width: 5rem;
+    overflow: hidden;
+    display: none;
+}
+
+.typeSymbol img {
+    height: 100%;
+    width: auto;
+    display: block;
+    background-color: rgb(110, 109, 109);
+}
