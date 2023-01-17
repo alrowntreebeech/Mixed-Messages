@@ -103,15 +103,198 @@ div label {
 }
 
 .typeSymbol {
-    height: 5rem;
-    width: 5rem;
+    border-radius: 100%;
+    height: 6rem;
+    width: 6rem;
     overflow: hidden;
     display: none;
 }
 
 .typeSymbol img {
-    height: 100%;
-    width: auto;
+    height: 60%;
+    width: 60%;
+    padding: 20%;
     display: block;
-    background-color: rgb(110, 109, 109);
+}
+
+/*Background Colours for Symbols*/
+
+#normal1 {
+    background: #A0A29F;
+    box-shadow: 0 0 20px #A0A29F;
+}
+
+#normal2 {
+    background: #A0A29F;
+    box-shadow: 0 0 20px #A0A29F;
+}
+
+#bug1 {
+    background: #92BC2C;
+    box-shadow: 0 0 20px #92BC2C;
+}
+
+#bug2 {
+    background: #92BC2C;
+    box-shadow: 0 0 20px #92BC2C;
+}
+
+#dark1 {
+    background: #595761;
+    box-shadow: 0 0 20px #595761;
+}
+
+#dark2 {
+    background: #595761;
+    box-shadow: 0 0 20px #595761;
+}
+
+#dragon1 {
+    background: #0C69C8;
+    box-shadow: 0 0 20px #0C69C8;
+}
+
+#dragon2 {
+    background: #0C69C8;
+    box-shadow: 0 0 20px #0C69C8;
+}
+
+#electric1 {
+    background: #F2D94E;
+    box-shadow: 0 0 20px #F2D94E;
+}
+
+#electric2 {
+    background: #F2D94E;
+    box-shadow: 0 0 20px #F2D94E;
+}
+
+#fairy1 {
+    background: #EE90E6;
+    box-shadow: 0 0 20px #EE90E6;
+}
+
+#fairy2 {
+    background: #EE90E6;
+    box-shadow: 0 0 20px #EE90E6;
+}
+
+#fighting1 {
+    background: #D3425F;
+    box-shadow: 0 0 20px #D3425F;
+}
+
+#fighting2 {
+    background: #D3425F;
+    box-shadow: 0 0 20px #D3425F;
+}
+
+#fire1 {
+    background: #FBA54C;
+    box-shadow: 0 0 20px #FBA54C;
+}
+
+#fire2 {
+    background: #FBA54C;
+    box-shadow: 0 0 20px #FBA54C;
+}
+
+#flying1 {
+    background: #A1BBEC;
+    box-shadow: 0 0 20px #A1BBEC;
+}
+
+#flying2 {
+    background: #A1BBEC;
+    box-shadow: 0 0 20px #A1BBEC;
+}
+
+#ghost1 {
+    background: #5F6DBC;
+    box-shadow: 0 0 20px #5F6DBC;
+}
+
+#ghost2 {
+    background: #5F6DBC;
+    box-shadow: 0 0 20px #5F6DBC;
+}
+
+#grass1 {
+    background: #5FBD58;
+    box-shadow: 0 0 20px #5FBD58;
+}
+
+#grass2 {
+    background: #5FBD58;
+    box-shadow: 0 0 20px #5FBD58;
+}
+
+#ground1 {
+    background: #DA7C4D;
+    box-shadow: 0 0 20px #DA7C4D;
+}
+
+#ground2 {
+    background: #DA7C4D;
+    box-shadow: 0 0 20px #DA7C4D;
+}
+
+#ice1 {
+    background: #75D0C1;
+    box-shadow: 0 0 20px #75D0C1;
+}
+
+#ice2 {
+    background: #75D0C1;
+    box-shadow: 0 0 20px #75D0C1;
+}
+
+#poison1 {
+    background: #B763CF;
+    box-shadow: 0 0 20px #B763CF;
+}
+
+#poison2 {
+    background: #B763CF;
+    box-shadow: 0 0 20px #B763CF;
+}
+
+#psychic1 {
+    background: #FA8581;
+    box-shadow: 0 0 20px #FA8581;
+}
+
+#psychic2 {
+    background: #FA8581;
+    box-shadow: 0 0 20px #FA8581;
+}
+
+#rock1 {
+    background: #C9BB8A;
+    box-shadow: 0 0 20px #C9BB8A;
+}
+
+#rock2 {
+    background: #C9BB8A;
+    box-shadow: 0 0 20px #C9BB8A;
+}
+
+#steel1 {
+    background: #5695A3;
+    box-shadow: 0 0 20px #5695A3;
+}
+
+#steel2 {
+    background: #5695A3;
+    box-shadow: 0 0 20px #5695A3;
+}
+
+#water1 {
+    background: #539DDF;
+    box-shadow: 0 0 20px #539DDF;
+}
+
+#water2 {
+    background: #539DDF;
+    box-shadow: 0 0 20px #539DDF;
 }
